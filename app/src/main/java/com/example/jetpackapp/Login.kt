@@ -1,5 +1,6 @@
 package com.example.jetpackapp
 
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -82,6 +83,7 @@ fun LoginFields() {
 
 }
 
+
 @Composable
 fun LoginHeader() {
   Text(text = "Welcome Back ", fontSize =35.sp, fontWeight = FontWeight.ExtraBold , )
@@ -96,7 +98,7 @@ fun field(Value:String,label:String, placeholder:String,
         onValueChange = onvaluechange,
         label ={Text(text = label) },
         placeholder={Text(text = placeholder)},
-        VisualTransformation = VisualTransformation,
+        visualTransformation = VisualTransformation,
 
     )
 }
